@@ -18,7 +18,7 @@ jobs:
         dotnet-version: 7.x
 
     - run: dotnet tool update -g docfx
-    - run: docfx docfx_project/docfx.json
+    - run: docfx ./Docs/docfx_project/docfx.json
     
     - name: Upload build
       uses: actions/upload-artifact@v3
