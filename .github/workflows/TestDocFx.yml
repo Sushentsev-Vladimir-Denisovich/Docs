@@ -33,7 +33,8 @@ jobs:
     - name: Download artifact
       uses: actions/download-artifact@v3
       with:
-          name: Build.tar          
+          name: Build
+          path: Build.tar 
       
     - name: Run DocFx.json
       run: docfx ./Build/docfx_project/docfx.json
