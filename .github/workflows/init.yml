@@ -1,0 +1,32 @@
+name: Build dev
+
+on:
+  push:
+    branches: [master] #Написать master чтоб работало
+  pull_request:
+    branches: [master] #Написать master чтоб работало
+
+jobs:
+  publish-docs:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Chekout
+      uses: actions/checkout@v3
+      
+    - name: Dotnet Setup
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.x
+
+    - name: DocFx Update
+      run: dotnet tool update -g docfx
+      
+    - name: Build DocFx
+      run: docfx init -q
+      
+      
+    - name: what
+      uses: actions/upload-artifact@v3
+      with:
+          name: docfx.json
+          path: ./
