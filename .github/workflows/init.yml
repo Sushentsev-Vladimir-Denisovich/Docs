@@ -22,4 +22,4 @@ jobs:
       run: dotnet tool update -g docfx
       
     - name: Build DocFx
-      run: docfx init -q -o "./Docs/docfx_project/"
+      run: docfx init -q
