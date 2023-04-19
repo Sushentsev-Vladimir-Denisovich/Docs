@@ -14,14 +14,14 @@ references:
   fullName: Docs.Form1
   nameWithType: Form1
 - uid: Docs.Form1.Prov(System.Double[0:,0:],System.Int32,System.Int32)
-  name: Prov(double[,], int, int)
+  name: Prov(Double[,], Int32, Int32)
   href: api/Docs.Form1.html#Docs_Form1_Prov_System_Double_0__0___System_Int32_System_Int32_
   commentId: M:Docs.Form1.Prov(System.Double[0:,0:],System.Int32,System.Int32)
-  name.vb: Prov(Double(,), Integer, Integer)
-  fullName: Docs.Form1.Prov(double[,], int, int)
-  fullName.vb: Docs.Form1.Prov(Double(,), Integer, Integer)
-  nameWithType: Form1.Prov(double[,], int, int)
-  nameWithType.vb: Form1.Prov(Double(,), Integer, Integer)
+  name.vb: Prov(Double(,), Int32, Int32)
+  fullName: Docs.Form1.Prov(System.Double[,], System.Int32, System.Int32)
+  fullName.vb: Docs.Form1.Prov(System.Double(,), System.Int32, System.Int32)
+  nameWithType: Form1.Prov(Double[,], Int32, Int32)
+  nameWithType.vb: Form1.Prov(Double(,), Int32, Int32)
 - uid: Docs.Form1.Prov*
   name: Prov
   href: api/Docs.Form1.html#Docs_Form1_Prov_
@@ -30,13 +30,13 @@ references:
   fullName: Docs.Form1.Prov
   nameWithType: Form1.Prov
 - uid: Docs.Form1.Proverka(System.Double[0:,0:])
-  name: Proverka(double[,])
+  name: Proverka(Double[,])
   href: api/Docs.Form1.html#Docs_Form1_Proverka_System_Double_0__0___
   commentId: M:Docs.Form1.Proverka(System.Double[0:,0:])
   name.vb: Proverka(Double(,))
-  fullName: Docs.Form1.Proverka(double[,])
-  fullName.vb: Docs.Form1.Proverka(Double(,))
-  nameWithType: Form1.Proverka(double[,])
+  fullName: Docs.Form1.Proverka(System.Double[,])
+  fullName.vb: Docs.Form1.Proverka(System.Double(,))
+  nameWithType: Form1.Proverka(Double[,])
   nameWithType.vb: Form1.Proverka(Double(,))
 - uid: Docs.Form1.Proverka*
   name: Proverka
@@ -46,13 +46,13 @@ references:
   fullName: Docs.Form1.Proverka
   nameWithType: Form1.Proverka
 - uid: Docs.Form1.Rez(System.Double[0:,0:],System.Double)
-  name: Rez(double[,], double)
+  name: Rez(Double[,], Double)
   href: api/Docs.Form1.html#Docs_Form1_Rez_System_Double_0__0___System_Double_
   commentId: M:Docs.Form1.Rez(System.Double[0:,0:],System.Double)
   name.vb: Rez(Double(,), Double)
-  fullName: Docs.Form1.Rez(double[,], double)
-  fullName.vb: Docs.Form1.Rez(Double(,), Double)
-  nameWithType: Form1.Rez(double[,], double)
+  fullName: Docs.Form1.Rez(System.Double[,], System.Double)
+  fullName.vb: Docs.Form1.Rez(System.Double(,), System.Double)
+  nameWithType: Form1.Rez(Double[,], Double)
   nameWithType.vb: Form1.Rez(Double(,), Double)
 - uid: Docs.Form1.Rez*
   name: Rez
