@@ -25,7 +25,7 @@ namespace Docs
         /// <summary>
         ///  Функция, осуществляющая разрез по случайному числу
         /// </summary>
-        /// <param name="mas">Почему не работает</param>
+        /// <param name="mas">Массив, определяющий сетку.</param>
         /// <param name="rez">Случайное число, по которому вычисляется разрез</param>
         public static double[,] Rez(double[,] mas, double rez)
         {
