@@ -27,17 +27,17 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-          name: docfx.json
+          name: Build
           path: ./  
           
     - name: Download artifact
       uses: actions/download-artifact@v3
       with:
-          name: docfx.json
+          name: Build
           path: ./            
       
     - name: Run DocFx.json
-      run: docfx ./docfx.json
+      run: docfx ./Build/docfx_project/docfx.json
     
     - name: Build
       run: dotnet build
