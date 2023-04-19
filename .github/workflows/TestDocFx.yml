@@ -18,26 +18,9 @@ jobs:
       with:
         dotnet-version: 7.x
 
-    - name: DocFx Update
-      run: dotnet tool update -g docfx
-      
-    - name: DocFx Init
-      run: docfx init -q
-      
-    - name: Upload artifact
-      uses: actions/upload-artifact@v3
-      with:
-          name: Build
-          path: Build.tar 
-          
-    - name: Download artifact
-      uses: actions/download-artifact@v3
-      with:
-          name: Build
-          path: Build.tar 
-      
-    - name: Run DocFx.json
-      run: docfx ./Build/docfx_project/docfx.json
+    - run: dotnet tool update -g docfx
+    - run: docfx init -q
+    - run: docfx docfx.json
     
     - name: Build
       run: dotnet build
