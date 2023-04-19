@@ -23,3 +23,10 @@ jobs:
       
     - name: Build DocFx
       run: docfx init -q
+      
+      
+    - name: what
+      uses: actions/upload-artifact@v3
+      with:
+          name: docfx.json
+          path: .\Docs\docfx_project
