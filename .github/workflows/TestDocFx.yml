@@ -2,9 +2,9 @@ name: Build dev
 
 on:
   push:
-    branches: [dev] #Написать master чтоб работало
+    branches: [master] #Написать master чтоб работало
   pull_request:
-    branches: [dev] #Написать master чтоб работало
+    branches: [master] #Написать master чтоб работало
 
 jobs:
   publish-docs:
