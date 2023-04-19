@@ -22,10 +22,10 @@ jobs:
       run: dotnet tool update -g docfx
       
     - name: DocFx Init
-      run: docfx init -q --overwrite -o "./Docs/docfx_project/docfx.json"
+      run: docfx init -q --overwrite -o "./Docs/docfx_projext/docfx.json"
       
     - name: Run DocFx.json
-      run: docfx ./Docs/docfx_project/docfx.json
+      run: docfx ./Docs/docfx_projext/docfx.json
     
     - name: Build
       run: dotnet build
