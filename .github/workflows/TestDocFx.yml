@@ -28,7 +28,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Build ${{ github.run_number }} 
-        path: ./public
+        path: ./
     - uses: actions/checkout@v1
 
     - name: Deploy
