@@ -21,6 +21,9 @@ jobs:
     - run: dotnet tool update -g docfx
     - run: docfx ./Docs/docfx_project/docfx.json
     
+    - name: Build
+      run: dotnet build
+    
     - name: Upload build
       uses: actions/upload-artifact@v3
       with:
@@ -33,12 +36,3 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./Docs/_site/
-        
-    - name: My
-      uses: actions/deploy-pages@v2
-      with:
-        timeout: 600000
-        error_count: 10
-        reporting_interval: 5000
-        artifact_name: github-pages
-        preview: false
