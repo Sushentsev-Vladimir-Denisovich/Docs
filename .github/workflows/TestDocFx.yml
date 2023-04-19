@@ -21,14 +21,14 @@ jobs:
     - name: DocFx Update
       run: dotnet tool update -g docfx
       
+    - name: Build DocFx
+      run: docfx init
+      
     - name: Run DocFx.json
-      run: docfx ./Docs/docfx_project/docfx.json
+      run: docfx docfx.json
     
     - name: Build
       run: dotnet build
-      
-    - name: Build DocFx
-      run: docfx build
     
     - name: Upload build
       uses: actions/upload-artifact@v3
