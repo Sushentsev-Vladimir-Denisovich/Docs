@@ -25,7 +25,7 @@ jobs:
       run: docfx init -q --overwrite -o "./Docs/docfx_projext/docfx.json"
       
     - name: Run DocFx.json
-      run: docfx ./Docs/docfx_projext/docfx.json
+      run: docfx ./Docs/docfx_project/docfx.json
     
     - name: Build
       run: dotnet build
