@@ -33,3 +33,13 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./Docs/_site/
+        
+    - name: Deploy
+      uses: actions/deploy-pages@v2
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        timeout: 600000
+        error_count: 10
+        reporting_interval: 5000
+        artifact_name: github-pages
+        preview: false
