@@ -1,11 +1,10 @@
-name: Docs Only Build1
+name: Build dev
 
 on:
   push:
     branches: [master, dev]
   pull_request:
     branches: [master, dev]
-  workflow_dispatch:
 
 jobs:
   build-docs:
@@ -24,4 +23,31 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs
+        publish_dir: ./_site/
+  publish-docs:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Chekout
+      uses: actions/checkout@v3
+    - name: Dotnet Setup
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.x
+
+    - run: dotnet tool update -g docfx
+    - run: docfx ./Docs/docfx_project/docfx.json
+    
+    - name: Upload build
+      uses: actions/upload-artifact@v3
+      with:
+        name: Build ${{ github.run_number }} 
+        path: ./
+    - uses: actions/checkout@v1
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site/
+
+
