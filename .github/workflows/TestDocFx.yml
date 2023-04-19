@@ -34,7 +34,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./Docs/_site/
         
-    - name: Deploy
+    - name: My
       uses: actions/deploy-pages@v2
       with:
         timeout: 600000
