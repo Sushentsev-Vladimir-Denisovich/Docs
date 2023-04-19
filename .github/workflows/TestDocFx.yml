@@ -20,7 +20,7 @@ jobs:
 
     - run: dotnet tool update -g docfx
     - run: docfx init -q
-    - run: docfx docfx.json
+    - run: docfx "/home/runner/work/Docs/Docs/docfx_project/docfx.json"
     
     - name: Build
       run: dotnet build
