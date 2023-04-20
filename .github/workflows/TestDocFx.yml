@@ -7,7 +7,7 @@ on:
     branches: [master] #Написать master чтоб работало
 
 jobs:
-  publish-docs:
+  DocFx:
     runs-on: ubuntu-latest
     steps:
     - name: Chekout
@@ -22,7 +22,6 @@ jobs:
     - run: docfx init -q
     - run: docfx "/home/runner/work/Docs/Docs/docfx_project/docfx.json"
 
-    
     - name: Build
       run: dotnet build
     
